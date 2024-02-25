@@ -1,6 +1,6 @@
 require 'socket'
 
-TIMING = 2
+TIMING_p = 2
 def Checking(port)
     socket      = Socket.new(:INET, :STREAM)
     remote_add  = Socket.sockaddr_in(port, 'www.host.com')
