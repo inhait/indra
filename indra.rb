@@ -15,14 +15,12 @@ def Checking(port)
     if sockets
         p "Port #{port} is open"
     else
-    
     end
-end
-# PORTS List 
-lport = [21,22,23,25,53,80,443,3306,8080]
-threads   = []
-
-PORT_LIST.each { |i| threads << Thread.new { scan_port(i) }}
+end 
+lstport = [21,22,23,25,53,80,443,3306,8080]
+threads = []
+lstport.each { |i| threads << Thread.new { scan_port(i) }}
 threads.each(&:join)
+
 
 
