@@ -1,7 +1,6 @@
-require 'socket' 
+require 'socket'
 
-TIMEOUT = 2
-
+TIMING = 2
 def Checking(port)
     socket      = Socket.new(:INET, :STREAM)
     remote_add  = Socket.sockaddr_in(port, 'www.host.com')
@@ -19,12 +18,11 @@ def Checking(port)
     
     end
 end
-
-PORT_LIST = [21,22,23,25,53,80,443,3306,8080]
+# PORTS List 
+lport = [21,22,23,25,53,80,443,3306,8080]
 threads   = []
 
 PORT_LIST.each { |i| threads << Thread.new { scan_port(i) }}
-
 threads.each(&:join)
 
 
