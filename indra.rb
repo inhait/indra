@@ -1,6 +1,10 @@
 #------------------------------
 #
-
+# source code - indra scanning tool 
+# v0.0.1
+#
+#
+# -----------
 
 
 require 'socket'
@@ -8,10 +12,7 @@ require 'socket'
 TIMING_p = 2
 def Checking(port)
     socket      = Socket.new(:IN----------------------------------------------------------------------------
-# source code | indra scanning tool 
-# v0.0.1
-# 
-# ET, :STREAM)
+
     remote_add  = Socket.sockaddr_in(port, 'www.host.com')
 
     begin
