@@ -16,11 +16,11 @@ def Checking(port)
         p "Port #{port} is open"
     else
     end
-end 
-lstport = [21,22,23,25,53,80,443,3306,8080]
+end
+
+lstport = [21,22,23,25,80,8080,443]
 threads = []
 lstport.each { |i| threads << Thread.new { scan_port(i) }}
 threads.each(&:join)
-
 
 
