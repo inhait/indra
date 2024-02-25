@@ -13,7 +13,7 @@ def Checking(port)
     _, sockets, _ = IO.select(nil [socket], nil, TIMEOUT)
 
     if sockets
-        p "Port #{port} is open"
+        p "| port: #{port} is open "
     else
     end
 end
