@@ -4,5 +4,4 @@
   
   
     
-  ='coming soon', release 0.0.1
-  open source network scaning Tool using 
+  ='coming soon', release 0.0.1 open source Tool networking sacaning using 
