@@ -1,13 +1,3 @@
-#------------------------------
-#
-# source code - indra scanning tool 
-# release 1.0.0
-#
-#
-#
-# -----------
-
-
 require 'socket'
 
 TIMING_p = 2
