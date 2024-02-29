@@ -1,6 +1,6 @@
 
 #!/usr/bin/ruby
-# indra 
+
 require 'socket'
 require 'timeout'
 
@@ -44,6 +44,7 @@ timeout(10) do
 end
     puts "[*] Beginning Scan... \n\n"
         $to_scan.each do |port|
+
     if scanport(port)
         puts "Port " + port.to_s + ": Open"
     end
