@@ -1,2 +1,2 @@
 
-require 'socket'
+#!/usr/bin/ruby
