@@ -51,6 +51,7 @@ end
 
 puts "\n [*] Scan Finished !"
 puts "\n > indra 0.0.1 "
+puts "\n ------------- "
 
 
 
