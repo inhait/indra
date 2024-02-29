@@ -1,11 +1,9 @@
-require 'socket'
+require 'socket' 
+
 
 TIMING_p = 2
 def Checking(port)
-    socket      = Socket.new(:IN----------------------------------------------------------------------------
-
-    remote_add  = Socket.sockaddr_in(port, 'www.host.com')
-
+    remote_add  = Socket.sockaddr_in(port, 'www.example.com')
     begin
         socket.connect_nonblock(remote_addr)
     rescue Errno:EINPROGRESS
@@ -18,7 +16,8 @@ def Checking(port)
     else
     end
 end
-#ports-list
+
+# > port listing .
 lstport = [21,22,23,25,80,8080,443,441]
 threads = []
 lstport.each { |i| threads << Thread.new { scan_port(i) }}
