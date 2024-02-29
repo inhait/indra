@@ -6,7 +6,6 @@ def Checking(port)
         socket.connect_nonblock(remote_addr)
     rescue Errno:EINPROGRESS
     end
-
     _, sockets, _ = IO.select(nil [socket], nil, TIMEOUT)
 
     if sockets
