@@ -29,7 +29,7 @@ def scanport(port)
         puts "[!] Error: Failed to Resolve Target "
         exit
     end
-    timeout(10) do
+timeout(10) do
         begin
             @result = s.connect(sockaddr)
         rescue
