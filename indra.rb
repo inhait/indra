@@ -11,7 +11,7 @@ def Checking(port)
     if sockets
         p "| port: #{port} is open "
     else
-    end
+        
 end
 lstport = [21,22,23,25,80,8080,443,441]
 threads = []
