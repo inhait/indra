@@ -1,7 +1,5 @@
-require 'socket' 
+require 'socket'
 
-
-TIMING_p = 2
 def Checking(port)
     remote_add  = Socket.sockaddr_in(port, 'www.example.com')
     begin
@@ -17,7 +15,8 @@ def Checking(port)
     end
 end
 
-# > port listing .
+# port listing
+
 lstport = [21,22,23,25,80,8080,443,441]
 threads = []
 lstport.each { |i| threads << Thread.new { scan_port(i) }}
