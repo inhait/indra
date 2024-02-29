@@ -10,7 +10,7 @@ $max_port = ARGV[2]
 
 begin
     if (Integer $min_port) <= (Integer $max_port)
-            $to_scan = ((Integer $min_port)..(Integer $max_port))
+        $to_scan = ((Integer $min_port)..(Integer $max_port)).to_a
     else
         puts "[!] Error: Invalid Range of Ports"
         exit
@@ -42,9 +42,8 @@ def scanport(port)
         return false
     end
 end
-puts "[*] Beginning Scan... \n\n"
-
-$to_scan.each do |port|
+    puts "[*] Beginning Scan... \n\n"
+        $to_scan.each do |port|
     if scanport(port)
         puts "Port " + port.to_s + ": Open"
     end
