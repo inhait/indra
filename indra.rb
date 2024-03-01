@@ -7,7 +7,7 @@ require 'timeout'
 $rhost = ARGV[0]
 $min_port = ARGV[1]
 $max_port = ARGV[2]
-
+# ------------
 begin
     if (Integer $min_port) <= (Integer $max_port)
         $to_scan = ((Integer $min_port)..(Integer $max_port)).to_a
@@ -20,7 +20,7 @@ rescue ArgumentError
     puts "[!] Error: Invalid Range of Ports"
     exit
 end
-
+# ------
 def scanport(port)
     s = Socket.new Socket::AF_INET, Socket::SOCK_STREAM
     begin
