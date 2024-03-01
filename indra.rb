@@ -1,12 +1,10 @@
-
-#!/usr/bin/ruby
 require 'socket'
 require 'timeout'
 
 $rhost = ARGV[0]
 $min_port = ARGV[1]
 $max_port = ARGV[2]
-# ------------
+
 begin
     if (Integer $min_port) <= (Integer $max_port)
         $to_scan = ((Integer $min_port)..(Integer $max_port)).to_a
@@ -48,10 +46,4 @@ end
     if scanport(port)
         puts "Port " + port.to_s + ": Open"
     end
-end
-
-puts "\n start scanning ... "
-puts "\n ------------------- "
-puts "\n [*] Scan Finished ! "
-puts "\n > indra 0.0.1 "
-puts "\n ------------------- "
+end  
