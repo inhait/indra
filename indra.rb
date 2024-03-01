@@ -1,6 +1,5 @@
 
 #!/usr/bin/ruby
-
 require 'socket'
 require 'timeout'
 
@@ -49,7 +48,7 @@ end
         puts "Port " + port.to_s + ": Open"
     end
 end
-
+puts "\n ------------- "
 puts "\n [*] Scan Finished !"
 puts "\n > indra 0.0.1 "
 puts "\n ------------- "
