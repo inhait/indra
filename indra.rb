@@ -40,6 +40,7 @@ timeout(10) do
     else
         return false
     end
+    #----------------------
 end
     puts "[*] Beginning Scan... \n\n"
         $to_scan.each do |port|
@@ -54,11 +55,3 @@ puts "\n ------------------- "
 puts "\n [*] Scan Finished ! "
 puts "\n > indra 0.0.1 "
 puts "\n ------------------- "
-
-
-
-
-
-
-
-
