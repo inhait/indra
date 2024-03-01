@@ -48,7 +48,8 @@ end
         puts "Port " + port.to_s + ": Open"
     end
 end
-puts "\n    starting...      "
+
+puts "\n    scanning ...      "
 puts "\n ------------------- "
 puts "\n [*] Scan Finished ! "
 puts "\n > indra 0.0.1 "
