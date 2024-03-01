@@ -50,7 +50,7 @@ end
     end
 end
 
-puts "\n    scanning ...      "
+puts "\n start scanning ... "
 puts "\n ------------------- "
 puts "\n [*] Scan Finished ! "
 puts "\n > indra 0.0.1 "
