@@ -18,7 +18,6 @@ rescue ArgumentError
     puts "[!] Error: Invalid Range of Ports"
     exit
 end
-# ------
 def scanport(port)
     s = Socket.new Socket::AF_INET, Socket::SOCK_STREAM
     begin
