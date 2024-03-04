@@ -1,6 +1,7 @@
 require 'socket'
 require 'timeout'
 
+
 $rhost = ARGV[0]
 $min_port = ARGV[1]
 $max_port = ARGV[2]
@@ -38,11 +39,10 @@ timeout(10) do
     else
         return false
     end
-    #----------------------
+
 end
     puts "[*] Beginning Scan... \n\n"
         $to_scan.each do |port|
-
     if scanport(port)
         puts "Port " + port.to_s + ": Open"
     end
